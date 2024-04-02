@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "503627624769",
+    "project_id": "fir-tutorial-40201",
+    "storage_bucket": "fir-tutorial-40201.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503627624769:android:ac70262aeb9ff92ddc71c0",
+        "android_client_info": {
+          "package_name": "com.adharsh2608.firstapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd2u1CZswUbnLDug5Fs5kHM0u-qyZPbDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
