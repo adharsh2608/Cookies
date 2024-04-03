@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screen1.dart';
 import 'login.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
@@ -17,7 +18,7 @@ class Apper extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context)=> LoginPage(),
-        '/myapp': (context)=> MyApp(),
+        '/screen1': (context)=> MyApp(),
       },
     );
   }

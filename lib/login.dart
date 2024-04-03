@@ -104,16 +104,19 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(height: 10),
 
-                GestureDetector(
-                  onTap: _signIn,
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                        child: TextButton(
+                          onPressed: ()
+                          {
+                            _signIn();
+                          },
                           child: Container(
                             padding: const EdgeInsets.all(14),
-                  
+
                             decoration: BoxDecoration(color: Colors
                                 .deepPurpleAccent,
                                 borderRadius: BorderRadius.circular(20)),
@@ -127,8 +130,8 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
                 SizedBox(height: 10,),
                 Row(
@@ -172,5 +175,11 @@ class _LoginPageState extends State<LoginPage> {
           print('Some error happened');
         }
     }
+// void changePage()
+// {
+//   setState(() {
+//
+//   });
+// }
 
 }
