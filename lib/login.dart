@@ -16,20 +16,20 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final FirebaseAuthServices _auth =FirebaseAuthServices();
-  final _emailController= TextEditingController();
-  final _passwordController= TextEditingController();
-
-  Future signIn() async{
-    await FirebaseAuth.instance.signInWithEmailAndPassword(email: _emailController.text.trim(), password: _passwordController.text.trim(),);
-  }
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    _emailController.dispose();
-    _passwordController.dispose();
-    super.dispose();
-  }
+  // final FirebaseAuthServices _auth =FirebaseAuthServices();
+  // final _emailController= TextEditingController();
+  // final _passwordController= TextEditingController();
+  //
+  // Future signIn() async{
+  //   await FirebaseAuth.instance.signInWithEmailAndPassword(email: _emailController.text.trim(), password: _passwordController.text.trim(),);
+  // }
+  // @override
+  // void dispose() {
+  //   // TODO: implement dispose
+  //   _emailController.dispose();
+  //   _passwordController.dispose();
+  //   super.dispose();
+  // }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: TextField(
-                      controller: _emailController,
+                      // controller: _emailController,
                       decoration: InputDecoration(
 
                         border: InputBorder.none,
@@ -93,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     child: TextField(
                       obscureText: true,
-                      controller: _passwordController,
+                      // controller: _passwordController,
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Password',
@@ -112,7 +112,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: TextButton(
                           onPressed: ()
                           {
-                            _signIn();
+                            // _signIn();
                           },
                           child: Container(
                             padding: const EdgeInsets.all(14),
@@ -160,21 +160,21 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-    void _signIn() async
-    {
-      String email= _emailController.text;
-      String password= _passwordController.text;
-
-      User? user= await _auth.signInWithEmailAndPassword(email, password);
-      if(user!= null)
-        {
-          print('Signed In Successfully.');
-        }
-      else
-        {
-          print('Some error happened');
-        }
-    }
+    // void _signIn() async
+    // {
+    //   String email= _emailController.text;
+    //   String password= _passwordController.text;
+    //
+    //   User? user= await _auth.signInWithEmailAndPassword(email, password);
+    //   if(user!= null)
+    //     {
+    //       print('Signed In Successfully.');
+    //     }
+    //   else
+    //     {
+    //       print('Some error happened');
+    //     }
+    // }
 // void changePage()
 // {
 //   setState(() {
